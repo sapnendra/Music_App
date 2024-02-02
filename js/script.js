@@ -122,7 +122,7 @@ async function displayAlbums() {
 
 async function main() {
   // get the list of all songs
-  await getSongs("songs/Chill_(mood)");
+  await getSongs("songs/20s");
   playMusic(songs[0], true);
 
   // Display Albums
