@@ -130,7 +130,7 @@ async function main() {
 
   // attach an event listener to play, next and previous
   play.addEventListener("click", () => {
-    if (currentSong.paused) {
+    if (currentSong.paused) { 
       currentSong.play();
       play.src = "img/pause.svg";
     } else {
