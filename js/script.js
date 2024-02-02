@@ -36,9 +36,7 @@ async function getSongs(folder) {
     
     
     // show all the songs in the playlist
-    let songUL = document
-    .querySelector(".songList")
-    .getElementsByTagName("ul")[0];
+    let songUL = document.querySelector(".songList").getElementsByTagName("ul")[0];
     songUL.innerHTML = "";
     for (const song of songs) {
         songUL.innerHTML =
@@ -124,7 +122,7 @@ async function displayAlbums() {
 
 async function main() {
   // get the list of all songs
-  await getSongs("songs/20s");
+  await getSongs("songs/Chill_(mood)");
   playMusic(songs[0], true);
 
   // Display Albums
